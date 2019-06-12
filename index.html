@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tables</title>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        table{
+            margin: 40px auto;
+            border-collapse: collapse;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            border: 1px solid #ff7848;
+        }
+        td{
+            border: 1px solid #ff7848;
+        }
+        thead, tfoot>tr{
+            background: deeppink;
+            color: white;
+        }
+        tbody>tr{
+
+        }
+        tbody>tr:nth-of-type(odd){
+            background: antiquewhite;
+        }
+        caption{
+            font-size: 30px;
+            text-shadow: 1px 1px 2px black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<table cellpadding="10" cellspacing="10" width="50%">
+
+    <!--<colgroup>
+        <col style="background: red">
+        <col style="background: blue">
+    </colgroup>-->
+
+    <caption>Таблица покупки рабов</caption>
+
+    <thead>
+    <tr>
+        <th>№ п/п</th><th>Пол</th><th>Вес</th><th>Возраст</th><th>Умения</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td>1</td><td>мужчина</td><td>80</td><td>25</td><td>копает картошку</td>
+    </tr>
+    <tr>
+        <td>2</td><td>женщина</td><td>60</td><td>31</td><td>доярка</td>
+    </tr>
+    <tr>
+        <td>3</td><td>мужчина</td><td>80</td><td>45</td><td>хороший муж</td>
+    </tr>
+    <tr>
+        <td>4</td><td>женщина</td><td>40</td><td>45</td><td>повар</td>
+    </tr>
+    <tr>
+        <td>5</td><td>мужчина</td><td>80</td><td>25</td><td>копает картошку</td>
+    </tr>
+    <tr>
+        <td>6</td><td>мужчина</td><td>80</td><td>25</td><td>копает картошку</td>
+    </tr>
+    <tr>
+        <td>7</td><td rowspan="2">мужчина</td><td>80</td><td>25</td><td>копает картошку</td>
+    </tr>
+    <tr>
+        <td>8</td><!--<td>мужчина</td>--><td>80</td><td>25</td><td>копает картошку</td>
+    </tr>
+    </tbody>
+
+    <tfoot>
+    <tr>
+        <td colspan="4">Итог</td>    <!--<td></td>    <td></td>    <td></td>-->    <td>40</td>
+    </tr>
+
+    </tfoot>
+
+</table>
+</body>
+</html>
